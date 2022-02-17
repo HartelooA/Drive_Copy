@@ -3,7 +3,7 @@ A python script to automatically copy removable drives to a destination folder w
 
 This script is intended to automatically copy drives as they are plugged in.
 
-Requirements: Python 3.7, 
+Requirements: Python 3.7, Windows operating system, and 
 
 # Planned functionality:
 On first run: If no configuration file is found, the script generates a configuration file that records all currently connected drives. Then, the script will prompt a path to the primary repository, and use this information to generate a configuration file that contains the pointer to the desired backup folder and the list of drives to ignore for automatic backup
@@ -12,7 +12,7 @@ When the script is run: As removable drives are plugged in, the script will dete
 
 If the destination drive is full or the removable dive is empty, the script will provide a message (popup?) indicating the status of the drive in question.
 
-# Future potential functionality:
-*Generate a simple GUI for visualization of the copy-over, delete, and various errors.
+# Project road map:
+*Generate simple GUI for visualization of the copy-over, delete, and various issues (such as waiting on name).
 *The script will keep a list of copied files from drives and enable the user to select and move the files into a folder of a chosen name.
-*The script will use small pointer files locally stored on the drive [that are ignored during copy/delete] to identify the source of the drive (such as photos, a certain camera, etc.) and place the files into sub-folders bearing the corresponding ID. (Could this also be done using a hardware ID? [if unique])
+*Exploratory use of small (<1kb) pointer files locally stored on the drive [that are ignored during copy/delete] to identify the source of the drive (such as photos, a certain camera, etc.) and place the files into sub-folders bearing the corresponding ID. (Could this also be done using a hardware ID? [if unique])
